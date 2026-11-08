@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 630" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative wide-screen Nextion WPSD radio dashboard</title>
+  <desc id="desc">A dark, high-contrast amateur-radio dashboard concept showing live DMR information, a talkgroup, recent activity, system status and navigation. Not an actual TFT screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17263a"/><stop offset="1" stop-color="#07121f"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#0d3144"/><stop offset="1" stop-color="#12263b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="13" stdDeviation="15" flood-color="#02080d" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="630" fill="#e8eef3"/>
+  <text x="40" y="39" font-family="Arial,sans-serif" font-size="16" fill="#42556a" font-weight="bold" letter-spacing="1.5">NEXTION / WPSD    •    WIDE-SCREEN CONCEPT</text>
+  <rect x="31" y="62" width="938" height="524" rx="25" fill="#152536" filter="url(#shadow)"/>
+  <rect x="47" y="78" width="906" height="492" rx="15" fill="url(#bg)"/>
+  <path d="M62 78h876a15 15 0 0 1 15 15v67H47V93a15 15 0 0 1 15-15" fill="url(#header)"/>
+  <text x="73" y="114" font-family="Arial,sans-serif" font-size="29" fill="#e7f8ff" font-weight="bold">2E0LXY</text>
+  <text x="74" y="137" font-family="Arial,sans-serif" font-size="13" fill="#8bc5d5">WPSD • NEXTION ENHANCED</text>
+  <rect x="402" y="96" width="176" height="42" rx="21" fill="#143d36" stroke="#2ba789"/>
+  <circle cx="428" cy="117" r="6" fill="#46e8b8"/>
+  <text x="445" y="122" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#c1ffe6">CONNECTED</text>
+  <text x="795" y="116" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#e6f5ff">DMR • RX</text>
+  <text x="797" y="139" font-family="Arial,sans-serif" font-size="12" fill="#84acc4">ILLUSTRATIVE DATA</text>
+
+  <g font-family="Arial,sans-serif">
+    <rect x="63" y="177" width="124" height="55" rx="11" fill="#1e6381" stroke="#4dbbd8"/>
+    <text x="125" y="210" text-anchor="middle" font-size="18" font-weight="bold" fill="white">HOME</text>
+    <rect x="63" y="243" width="124" height="48" rx="10" fill="#183047" stroke="#36586c"/>
+    <text x="125" y="273" text-anchor="middle" font-size="16" fill="#c4e2ee">MODES</text>
+    <rect x="63" y="303" width="124" height="48" rx="10" fill="#183047" stroke="#36586c"/>
+    <text x="125" y="333" text-anchor="middle" font-size="16" fill="#c4e2ee">POCSAG</text>
+    <rect x="63" y="363" width="124" height="48" rx="10" fill="#183047" stroke="#36586c"/>
+    <text x="125" y="393" text-anchor="middle" font-size="16" fill="#c4e2ee">SYSTEM</text>
+    <rect x="63" y="423" width="124" height="48" rx="10" fill="#183047" stroke="#36586c"/>
+    <text x="125" y="453" text-anchor="middle" font-size="16" fill="#c4e2ee">LAST HEARD</text>
+    <rect x="63" y="483" width="124" height="65" rx="10" fill="#183047" stroke="#36586c"/>
+    <text x="125" y="512" text-anchor="middle" font-size="14" fill="#c4e2ee">DISPLAY</text>
+    <text x="125" y="532" text-anchor="middle" font-size="14" fill="#c4e2ee">CONTROLS</text>
+  </g>
+
+  <rect x="204" y="177" width="470" height="213" rx="13" fill="#152e44" stroke="#33566d"/>
+  <text x="229" y="207" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5" fill="#85c7db">CURRENT ACTIVITY</text>
+  <rect x="568" y="190" width="88" height="31" rx="15" fill="#165346"/>
+  <text x="612" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#a5ffdc">LIVE</text>
+  <text x="229" y="271" font-family="Arial,sans-serif" font-size="47" font-weight="bold" fill="#ffffff">M0ABC</text>
+  <text x="230" y="298" font-family="Arial,sans-serif" font-size="16" fill="#9ac9dd">Caller / station ID</text>
+  <path d="M229 315h419" stroke="#36556a"/>
+  <text x="230" y="346" font-family="Arial,sans-serif" font-size="17" fill="#9fc8da">Destination</text>
+  <text x="648" y="346" text-anchor="end" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#f0b35a">TG 91 • Worldwide</text>
+  <text x="229" y="373" font-family="Arial,sans-serif" font-size="15" fill="#85b7c9">Time slot 2   •   Colour code 1</text>
+
+  <rect x="691" y="177" width="246" height="213" rx="13" fill="#152e44" stroke="#33566d"/>
+  <text x="710" y="207" font-family="Arial,sans-serif" font-size="14" letter-spacing="1" fill="#85c7db">HOTSPOT STATUS</text>
+  <g font-family="Arial,sans-serif" font-size="16">
+    <text x="711" y="244" fill="#a5c0d1">Mode</text><text x="917" y="244" text-anchor="end" fill="#ffffff" font-weight="bold">DMR</text>
+    <path d="M711 255h206" stroke="#2c485e"/>
+    <text x="711" y="284" fill="#a5c0d1">Gateway</text><text x="917" y="284" text-anchor="end" fill="#ffffff">Online</text>
+    <path d="M711 295h206" stroke="#2c485e"/>
+    <text x="711" y="324" fill="#a5c0d1">Modem</text><text x="917" y="324" text-anchor="end" fill="#ffffff">Ready</text>
+    <path d="M711 335h206" stroke="#2c485e"/>
+    <text x="711" y="364" fill="#a5c0d1">Serial link</text><text x="917" y="364" text-anchor="end" fill="#5ce4be">Active</text>
+  </g>
+
+  <rect x="204" y="408" width="733" height="140" rx="13" fill="#152e44" stroke="#33566d"/>
+  <text x="229" y="437" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.5" fill="#85c7db">RECENT ACTIVITY • CONCEPT ONLY</text>
+  <text x="229" y="475" font-family="Arial,sans-serif" font-size="17" fill="#f3f7fc">12:42</text>
+  <text x="328" y="475" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#ffffff">G0XYZ</text>
+  <text x="468" y="475" font-family="Arial,sans-serif" font-size="17" fill="#92b7ce">DMR</text>
+  <text x="575" y="475" font-family="Arial,sans-serif" font-size="17" fill="#f0b35a">TG 235</text>
+  <path d="M229 487h678" stroke="#2c485e"/>
+  <text x="229" y="521" font-family="Arial,sans-serif" font-size="17" fill="#f3f7fc">12:39</text>
+  <text x="328" y="521" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#ffffff">M7DEF</text>
+  <text x="468" y="521" font-family="Arial,sans-serif" font-size="17" fill="#92b7ce">YSF</text>
+  <text x="575" y="521" font-family="Arial,sans-serif" font-size="17" fill="#f0b35a">Room 1234</text>
+  <text x="500" y="611" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#62778c">DESIGN VISUALISATION — NOT AN ACTUAL TFT SCREENSHOT OR VERIFIED DATA</text>
+</svg>

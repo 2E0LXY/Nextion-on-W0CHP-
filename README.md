@@ -5,7 +5,7 @@
 Designed for the W0CHP **WPSD** (formerly W0CHP-PiStar-Dash) environment, with dedicated layouts for **3.2, 3.5, 4.3 and 7 inch** Nextion Enhanced screens. The design brings live digital-mode activity, hotspot status, operator details and touchscreen navigation together in one place.
 
 > [!IMPORTANT]
-> **Project status — documentation and layout specification.** The repository currently contains the README, not a verified set of downloadable `.tft` builds. The features below describe the intended dashboard family. **Do not assume a particular function is working on hardware until it appears in a published, tested build's release notes.** When compiled builds are published, only the `.tft` files will be distributed; editable `.hmi` projects and source code are not included.
+> **Project status — compiled TFT preview builds available.** Four v4.4 Native `.tft` files are provided under [`firmware/`](firmware/). They have passed build and integrity checks but **have not been tested on physical Nextion panels or connected WPSD hardware**. Do not assume all described functions work until hardware-tested. Editable `.hmi` projects and source code are not distributed.
 
 ![Conceptual wide-screen Nextion WPSD dashboard](docs/images/dashboard-concept.svg)
 
@@ -47,10 +47,10 @@ These are **four separate build targets**, not one interchangeable TFT file.
 
 | Display | Example Nextion Enhanced model | Native resolution | Layout approach | Build status |
 | --- | --- | --- | --- | --- |
-| **3.2 in** | `NX4024K032` | 400 × 240 | Compact overview, prioritised data and additional pages | Awaiting verified `.tft` |
-| **3.5 in** | `NX4832K035` | 480 × 320 | Detailed compact dashboard; primary design target | Awaiting verified `.tft` |
-| **4.3 in** | `NX4827K043` | 480 × 272 | Wider, shallower pages with larger touch targets | Awaiting verified `.tft` |
-| **7 in** | `NX8048K070` | 800 × 480 | Spacious multi-panel overview and more detail per page | Awaiting verified `.tft` |
+| **3.2 in** | `NX4024K032` | 400 × 240 | Compact overview, prioritised data and additional pages | Compiled preview; hardware untested |
+| **3.5 in** | `NX4832K035` | 480 × 320 | Detailed compact dashboard; primary design target | Compiled preview; hardware untested |
+| **4.3 in** | `NX4827K043` | 480 × 272 | Wider, shallower pages with larger touch targets | Compiled preview; hardware untested |
+| **7 in** | `NX8048K070` | 800 × 480 | Spacious multi-panel overview and more detail per page | Compiled preview; hardware untested |
 
 Check the **full model number on the back of your display** before choosing a file. This family targets the classic **Nextion Enhanced (`K`)** models, not automatically the Basic (`T`), Intelligent (`P`) or newer OpenNextion boards. Model suffixes and orientation may matter. A matching screen diagonal alone is not enough.
 
@@ -202,20 +202,20 @@ The initial design aims to avoid **extra installation or modification on the Pi-
 
 ## Getting a TFT file
 
-1. Open the repository's [Releases](../../releases) page (once builds are published).
+1. Open the [`firmware/`](firmware/) folder and select the appropriate compiled preview build.
 2. Download the `.tft` that matches the **exact display model**, not just screen size.
-3. Read that release's compatibility notes for the required **WPSD display and Layout Type settings**, tested version, known limitations and checksums.
+3. Check the compatibility notes below, the display model, known limitations and the `firmware/SHA256SUMS` manifest.
 4. Keep a copy of your current working TFT file if you have one.
 
-**Present availability:** there are currently **no verified `.tft` downloads in this repository**. Please do not substitute an unrelated TFT or rename a `.hmi` file to `.tft`.
+**Present availability:** compiled, integrity-checked v4.4 Native previews exist for all four sizes. **Hardware verification is still outstanding.** The builds use a 9600-baud serial setting and native G4KLX mode pages, with ON7LDS-dependent telemetry and lookup fields when supported by the installed driver. Advanced messaging and DAPNET sending are not implemented.
 
-Suggested future release naming (examples, **not** download links):
+Current files in [`firmware/`](firmware/):
 
 ```text
-Nextion-WPSD-3.2-NX4024K032-vX.Y.Z.tft
-Nextion-WPSD-3.5-NX4832K035-vX.Y.Z.tft
-Nextion-WPSD-4.3-NX4827K043-vX.Y.Z.tft
-Nextion-WPSD-7.0-NX8048K070-vX.Y.Z.tft
+Nextion-WPSD-3.2-NX4024K032-v4.4.0.tft
+Nextion-WPSD-3.5-NX4832K035-v4.4.0.tft
+Nextion-WPSD-4.3-NX4827K043-v4.4.0.tft
+Nextion-WPSD-7.0-NX8048K070-v4.4.0.tft
 ```
 
 ## Installing on a Nextion display
